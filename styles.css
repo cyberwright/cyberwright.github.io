@@ -3,18 +3,28 @@
     margin: 0;
 }
 
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+.secret {
+    max-width: 3rem;
+    max-height: 3rem;
+}
+
 .container {
     display: flex;
     flex-direction: column;
     align-items: center;
     border: 1px solid red;
-    padding: 3em 1em;
+    padding: 1em 1em;
 }
 
 header {
     display: flex;
     flex-direction: row;
-    background: #9FD6AA;
+    background: #7146d4;
     width: 100vw;
     position: fixed;
     top: 0;
@@ -32,18 +42,28 @@ header {
 }
 
 .sidescroll li {
-    
-    margin-right: 1em;
+    display: block;
+    background: linear-gradient(90deg,rgba(42, 123, 155, 1) 0%, rgba(87, 199, 133, 1) 50%, rgba(237, 221, 83, 1) 100%);
+    padding: 1rem;
 }
 
 main {
-    border: 1px solid green
+    border: 1px solid green;
+    height: calc(100% - 6rem);
+    overflow-x: scroll;
 }
-
 
 
 footer {
-    position: fixed;
     bottom: 0;
-    border: 1px solid blue
+    right: 0;
+    position: fixed;
 }
+
+footer img {
+    display: block;
+    border: 1px solid blue;
+    height: 10em;
+}
+
+
