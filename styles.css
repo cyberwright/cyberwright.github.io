@@ -1,0 +1,49 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid red;
+    padding: 3em 1em;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    background: #9FD6AA;
+    width: 100vw;
+    position: fixed;
+    top: 0;
+    height: 3em;
+    overflow-y: scroll;
+}
+
+.sidescroll ul {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    list-style: none;
+    height: 100%;
+    padding-left: 1em;
+}
+
+.sidescroll li {
+    
+    margin-right: 1em;
+}
+
+main {
+    border: 1px solid green
+}
+
+
+
+footer {
+    position: fixed;
+    bottom: 0;
+    border: 1px solid blue
+}
